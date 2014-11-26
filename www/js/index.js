@@ -38,10 +38,12 @@ var app = {
     },
     connect: function (e) {
 
-        alert("Trying to connect!");
-
         app.setStatus("Connecting...");
+
         var device = e.target.getAttribute('deviceId');
+
+        alert("Trying to connect! " + device);
+        
         console.log("Requesting connection to " + device);
         bluetoothSerial.connect(device, app.onconnect, app.ondisconnect);
     },
