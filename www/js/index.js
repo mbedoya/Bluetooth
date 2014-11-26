@@ -28,12 +28,18 @@ var app = {
         app.list();
     },
     list: function(event) {
+
+        alert("Discovering");
+
         deviceList.firstChild.innerHTML = "Discovering...";
         app.setStatus("Looking for Bluetooth Devices...");
 
         bluetoothSerial.list(app.ondevicelist, app.generateFailureFunction("List Failed"));
     },
     connect: function (e) {
+
+        alert("Trying to connect!");
+
         app.setStatus("Connecting...");
         var device = e.target.getAttribute('deviceId');
         console.log("Requesting connection to " + device);
