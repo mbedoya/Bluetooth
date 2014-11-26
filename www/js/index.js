@@ -14,6 +14,8 @@ var app = {
     },
     deviceready: function() {
 
+        alert("ready!");
+
         // wire buttons to functions
         deviceList.ontouchstart = app.connect; // assume not scrolling
         refreshButton.ontouchstart = app.list;
