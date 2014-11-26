@@ -16,6 +16,8 @@
         Blue
     </author>
 
+    <content src="index.html" />
+
     <!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
